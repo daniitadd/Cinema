@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <h1>Картки фільмів</h1>
+      <h1>Фільми</h1>
       <input
         type="text"
         placeholder="Пошук фільму..."
