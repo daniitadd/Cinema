@@ -72,3 +72,26 @@ input:focus {
     font-size: 14px;
   }
 }
+
+.hall {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.seat.selected {
+  background-color: #e63946;
+}

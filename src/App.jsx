@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div>
-      <h1>Фільми</h1>
       <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking/:id" element={<Booking />} />
       </Routes>
       </Router>
+      <h1>Фільми</h1>
       <input
         type="text"
         placeholder="Пошук фільму..."
