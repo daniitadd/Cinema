@@ -51,6 +51,8 @@ input:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid #2a2a2a;
+  position: relative;
+  height: 100%;
 }
 
 .movie-card:hover {
@@ -83,7 +85,7 @@ input:focus {
 .seat {
   width: 40px;
   height: 40px;
-  background-color: #4caf50;
+  background-color: #164d22;
   color: white;
   display: flex;
   align-items: center;
@@ -93,5 +95,61 @@ input:focus {
 }
 
 .seat.selected {
-  background-color: #e63946;
+  background-color: #0e1739;
+}
+
+@media (max-width: 600px) {
+  .hall {
+    grid-template-columns: repeat(4, 30px);
+    gap: 8px;
+  }
+
+  .seat {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.centered-hall {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+h2{
+  text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    color: #e63946;
+}
+
+.seat-choice{
+  text-align: center;
+}
+
+.bron {
+  background-color: #3f3f3f;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.bron:hover {
+  background-color: #2e2e2e;
+}
+
+.bron-center {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.movie-card .content {
+  padding-bottom: 50px;
 }

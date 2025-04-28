@@ -13,7 +13,8 @@ export default function CinemaHall() {
 
   return (
     <div>
-      <div className="hall">
+      <div className="centered-hall">
+        <div className="hall">
         {[...Array(rows * cols)].map((_, i) => {
           const seat = i + 1;
           return (
@@ -26,8 +27,9 @@ export default function CinemaHall() {
             </div>
           );
         })}
-      </div>
-      <p>Вибрані місця: {selectedSeats.join(", ")}</p>
+      </div></div>
+        <p className="seat-choice">Вибрані місця: {selectedSeats.join(", ")}</p>
+        
     </div>
   );
 }
