@@ -8,7 +8,7 @@ export default function Booking() {
 
   return (
     <div>
-      <h2>Бронювання для фільму: {movie?.title}</h2>
+      <h2>Бронювання для фільму: {movie.title}</h2>
       <CinemaHall />
     </div>
   );
