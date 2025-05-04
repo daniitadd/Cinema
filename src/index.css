@@ -150,3 +150,8 @@ h2{
 .movie-card .content {
   padding-bottom: 50px;
 }
+
+.seat.booked {
+  background-color: rgb(190, 31, 31);
+  cursor: not-allowed;
+}
