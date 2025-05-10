@@ -47,7 +47,7 @@ export default function BookingForm({ selectedSeats, onConfirm }) {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      <button type="submit">Підтвердити</button>
+      <div className="bron-ctr"><button type="submit" className="bron">Підтвердити</button></div>
     </form>
   );
 }

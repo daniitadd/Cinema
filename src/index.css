@@ -152,6 +152,14 @@ h2{
 }
 
 .seat.booked {
-  background-color: rgb(190, 31, 31);
+  background-color: rgb(111, 12, 12);
   cursor: not-allowed;
+}
+
+.bron-ctr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 15px;
 }
