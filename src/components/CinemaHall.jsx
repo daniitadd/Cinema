@@ -23,8 +23,16 @@ export default function CinemaHall() {
     );
   };
 
-  const handleConfirm = (userData) => {
+  const handleConfirm = ({ name, phone, email }) => {
     BookingService.saveBooking(id, selectedSeats);
+    const userInfo = {
+      movieId: id,
+      name,
+      phone,
+      email,
+      seats: selectedSeats
+    };
+    BookingService.saveUserData(userInfo);
     setBookedSeats((prev) => [...prev, ...selectedSeats]);
     setSelectedSeats([]);
     setShowForm(false);

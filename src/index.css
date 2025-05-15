@@ -148,6 +148,14 @@ h2{
   margin-top: 15px;
 }
 
+.bron-ctr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 15px;
+}
+
 .movie-card .content {
   padding-bottom: 50px;
 }
@@ -155,12 +163,4 @@ h2{
 .seat.booked {
   background-color: rgb(111, 12, 12);
   cursor: not-allowed;
-}
-
-.bron-ctr {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin-top: 15px;
 }
